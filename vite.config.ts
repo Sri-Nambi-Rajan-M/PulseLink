@@ -32,7 +32,7 @@ export default defineConfig(async ({ command, mode }): Promise<UserConfig> => {
   if (command === "build") {
     try {
       const { nitro } = await import("nitro/vite");
-      plugins.push(nitro({ defaultPreset: "cloudflare-module" }));
+      plugins.push(nitro({ defaultPreset: "node-server" }));
     } catch {
       console.warn(
         "[vite.config] `nitro` package not found — building without the nitro/server adapter.",
