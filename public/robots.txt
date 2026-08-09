@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://pulse-link-pink.vercel.app/sitemap.xml
